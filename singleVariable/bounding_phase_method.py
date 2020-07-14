@@ -3,22 +3,7 @@ import sympy as sym
 import numpy as np
 from random import *
 
-
-def main():
-
-    print "Bounding Phase Method for Unimodal Functions"
-
-    ## Objective Function
-    x = sym.symbols('x')
-    F = (x**2) + (54/x)
-    print F
-
-    ## Desgin Parameters
-    x_inital = random()*10
-    delta = 0.001
-    time_out = 200
-
-    ## Bounding
+def bounding_method(F, x, x_inital, delta, time_out):
     k = 0
     array = np.zeros(3)
     array[2] = x_inital
@@ -44,8 +29,27 @@ def main():
         fxk = F.subs(x, array[1])
         if (fxk1 >= fxk):
             break
-    print("The Boundaries are [" + str(array[0]) + ", " + str(array[2]) + "]")
+    return [array[0], array[2]]
 
 
+def main():
+
+    print "Bounding Phase Method for Unimodal Functions"
+
+    ## Objective Function
+    x = sym.symbols('x')
+    F = (x**2) + (54/x)
+    print F
+
+    ## Desgin Parameters
+    x_inital = random()*10
+    delta = 0.001
+    time_out = 200
+
+    ## Bounding
+    [a, b] = bounding_method(F, x, x_inital, delta, time_out)
+    print("The Boundaries are [" + str(b) + ", " + str(a) + "]")
+
+    
 if __name__ == "__main__":
     main()
