@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sympy as sym
 import numpy as np
 from random import *
