@@ -60,11 +60,11 @@ def main():
     print F
 
     ## Design Parameters
-    x_0 = unidirectional.unidirectional_search(F, x, [1.0, 1.0], [9.0, 9.0])
+    x_0 = unidirectional.unidirectional_search(F, x, [1.0, 1.0], [9.0, 9.0]) # nearest best solution (can be any random solution also)
     delta = [1.5, 1.5] # size reduction parameter
     sigma = 0.000001     # Termination
     
-    ## Unidirectional Search Method
+    ## Box's Evolutionary Search Method
     xm = box_evolutionary(F, x, x_0, delta, sigma)
 
     print("Local minimum value is: " + str(xm))
