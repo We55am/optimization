@@ -24,13 +24,13 @@ def exhaustive_search(F, x, a, b, n):
     
 
 def main():
-    print "Single Variable -- Exhaustive Method"
+    print("Single Variable -- Exhaustive Method")
 
     ## Objective Function
-    print "Objective Function: "
+    print("Objective Function: ")
     x = sym.symbols('x')
     F = (x**2) + (54/x)
-    print F
+    print(F)
     
     ## Desgin Parameters
     a = 0.5     # upper bound of the design variable
@@ -42,7 +42,7 @@ def main():
     if(val):
         print("The minimum is: " + str(val))
     else:
-        print "couldn't find local minimum, consider changing the boundaires"
+        print("couldn't find local minimum, consider changing the boundaires")
 
         
 if __name__ == "__main__":

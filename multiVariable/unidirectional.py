@@ -28,13 +28,13 @@ def unidirectional_search(F, x, x_t, s_t):
     return result
 
 def main():
-    print "Unidirectional Search for Multivaraible Optimization Problem"
+    print("Unidirectional Search for Multivaraible Optimization Problem")
 
     ## Objective Function
     
     x = [sym.symbols('x1'), sym.symbols('x2')]
     F = (x[0] - 10)**2 + (x[1] - 10)**2
-    print F
+    print(F)
 
     ## Design Parameters
     x_t = [2, 2]

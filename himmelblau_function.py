@@ -9,17 +9,17 @@ def himmelblau():
     return [F, x]
 
 def main():
-    print "Himmelblau Function ..."
+    print("Himmelblau Function ...")
     [F, x] = himmelblau()
-    print F
-    print "---------------------------------------------------------"
-    print "It has one local maximum at x1 = -0.270845, x2 =-0.923039"
-    print "Where f(x1, x2) = 181.617"
-    print "and four identical local minima: "
-    print "F(3.0,2.0) = 0.0"
-    print "F(-2.805118,3.131312) = 0.0 "
-    print "F(-3.779310,-3.283186) = 0.0 "
-    print "F(3.584428,-1.848126) = 0.0 "
+    print (F)
+    print ("---------------------------------------------------------")
+    print ("It has one local maximum at x1 = -0.270845, x2 =-0.923039")
+    print ("Where f(x1, x2) = 181.617")
+    print ("and four identical local minima: ")
+    print ("F(3.0,2.0) = 0.0")
+    print ("F(-2.805118,3.131312) = 0.0 ")
+    print ("F(-3.779310,-3.283186) = 0.0 ")
+    print ("F(3.584428,-1.848126) = 0.0 ")
     fig = plt.figure(figsize=(6,5))
     left, bottom, width, height = 0.1, 0.1, 0.8, 0.8
     ax = fig.add_axes([left, bottom, width, height])

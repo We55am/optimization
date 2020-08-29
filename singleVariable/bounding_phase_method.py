@@ -34,12 +34,12 @@ def bounding_method(F, x, x_inital, delta, time_out):
 
 def main():
 
-    print "Bounding Phase Method for Unimodal Functions"
+    print("Bounding Phase Method for Unimodal Functions")
 
     ## Objective Function
     x = sym.symbols('x')
     F = (x**2) + (54/x)
-    print F
+    print(F)
 
     ## Desgin Parameters
     x_inital = random()*10

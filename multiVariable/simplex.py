@@ -88,21 +88,21 @@ def simplex(F, x, x_base, gamma, beta, sigma, scale_factor):
             t_sum = ((subs(F,x,simplex[i]) - F_xc)**2)/(n+1)
         t_sum = float(t_sum)
 
-        print np.sqrt(t_sum)
+        print(np.sqrt(t_sum))
         
         if np.sqrt(t_sum) <= sigma:
-            break;
+            break
         else:
             simplex[xh_indx] = x_new
 
     return xl
 
 def main():
-    print "Simplex Search Method for Multivaraible Optimization Problem"
+    print("Simplex Search Method for Multivaraible Optimization Problem")
 
     ## Objective Function
     [F, x] = fun.himmelblau()
-    print F
+    print(F)
 
     ## Design Parameters
     x_base = unidirectional.unidirectional_search(F, x, [1.0, 1.0], [9.0, 9.0]) # nearest best solution (can be any random solution also)

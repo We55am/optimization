@@ -53,11 +53,11 @@ def box_evolutionary(F, x, x_0, delta, sigma):
     return x_current
 
 def main():
-    print "Box's Evolutionary Search for Multivaraible Optimization Problem"
+    print ("Box's Evolutionary Search for Multivaraible Optimization Problem")
 
     ## Objective Function
     [F, x] = fun.himmelblau()
-    print F
+    print (F)
 
     ## Design Parameters
     x_0 = unidirectional.unidirectional_search(F, x, [1.0, 1.0], [9.0, 9.0]) # nearest best solution (can be any random solution also)

@@ -35,13 +35,13 @@ def halving_method(F, x, a, b, sigma):
     return xm
 
 def main():
-    print "Interval Halving Method For Unimodal Function"
+    print ("Interval Halving Method For Unimodal Function")
 
     ## Objective Function
-    print "Objective Function"
+    print ("Objective Function")
     x = sym.symbols('x')
     F = (x**2) + (54/x)
-    print F
+    print(F)
 
     ## Desgin Parameters
     a = 0.1             # lower bound of the design variable

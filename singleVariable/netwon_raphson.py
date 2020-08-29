@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import sympy as sym
 import numpy as np
-from random import *
 
 
 def netwon_rapshon(F, x, delta_x, inital_guess, error):
@@ -24,13 +23,13 @@ def netwon_rapshon(F, x, delta_x, inital_guess, error):
     return x_new
     
 def main():
-    print "Netwon-Raphson Method"
+    print("Netwon-Raphson Method")
 
     ## Objective Function
     
     x = sym.symbols('x')
     F = (x**2) + (54/x)
-    print F
+    print(F)
 
     ## Design Parameters
     delta_x = 0.001
